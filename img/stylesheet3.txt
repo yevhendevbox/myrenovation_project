@@ -1,0 +1,23 @@
+.sprite {
+    background-image: url(spritesheet.png);
+    background-repeat: no-repeat;
+    display: block;
+}
+
+.sprite-mail_icon {
+    width: 26px;
+    height: 21px;
+    background-position: -5px -5px;
+}
+
+.sprite-name_icon {
+    width: 33px;
+    height: 31px;
+    background-position: -41px -5px;
+}
+
+.sprite-phone_icon {
+    width: 29px;
+    height: 29px;
+    background-position: -84px -5px;
+}
