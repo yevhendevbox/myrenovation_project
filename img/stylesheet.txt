@@ -1,40 +1,68 @@
 .sprite {
     background-image: url(spritesheet.png);
-    background-repeat: no-repeat;
-    display: block;
+    
+background-repeat: no-repeat;
+    
+display: block;
 }
+
 
 .sprite-adv_icon_1 {
-    width: 33px;
-    height: 42px;
-    background-position: -5px -5px;
+    
+width: 33px;
+    
+height: 42px;
+    
+background-position: -5px -5px;
 }
+
+
 
 .sprite-adv_icon_10 {
-    width: 40px;
-    height: 42px;
-    background-position: -48px -5px;
+    
+width: 40px;
+    
+height: 42px;
+    
+background-position: -48px -5px;
 }
+
+
 
 .sprite-adv_icon_2 {
-    width: 28px;
-    height: 42px;
-    background-position: -98px -5px;
+    
+width: 28px;
+    
+height: 42px;
+    
+background-position: -98px -5px;
 }
+
+
 
 .sprite-adv_icon_3 {
-    width: 44px;
-    height: 44px;
-    background-position: -136px -5px;
+    
+width: 44px;
+    
+height: 44px;
+    
+background-position: -136px -5px;
 }
+
+
 
 .sprite-adv_icon_4 {
-    width: 42px;
-    height: 42px;
-    background-position: -190px -5px;
+   
+width: 42px;
+    
+height: 42px;
+    
+background-position: -190px -5px;
 }
 
-.sprite-adv_icon_5 {
+.
+
+sprite-adv_icon_5 {
     width: 46px;
     height: 40px;
     background-position: -242px -5px;

@@ -8,7 +8,7 @@ html body {
   position: fixed;
   width: 100vw;
   height: 55px;
-  z-index: 1;
+  z-index: 10;
   background-color: #f9f9f9;
   -webkit-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14);
           box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14); }
@@ -92,7 +92,7 @@ html body {
 
 .showcase {
   position: relative;
-  width: 100vw;
+  width: 100%;
   height: 85vh;
   background-image: url(../img/showcase_bg.jpg);
   background-position: center center;
@@ -123,9 +123,135 @@ html body {
       -webkit-justify-content: center;
           -ms-flex-pack: center;
               justify-content: center; }
-      .showcase-wrap .showcase-content_headings {
-        text-shadow: 1px 1px 20px #fff !important; }
+      .showcase-wrap .showcase-content .title-lg {
+        font-family: "Cuprum", sans-serif;
+        font-size: 5em;
+        font-weight: 700;
+        text-transform: uppercase;
+        text-shadow: 1px 1px 20px #fff; }
+      .showcase-wrap .showcase-content .title-md {
+        font-family: "Cuprum", sans-serif;
+        font-size: 3em;
+        font-weight: 700;
+        line-height: 1em;
+        text-shadow: 1px 1px 35px #fff; }
+      .showcase-wrap .showcase-content .scroll-down-container {
+        position: absolute;
+        -webkit-box-sizing: border-box;
+                box-sizing: border-box;
+        top: 70vh;
+        left: 50vw; }
+        .showcase-wrap .showcase-content .scroll-down-container_icon {
+          background-image: url(../img/spritesheet4.png);
+          background-repeat: no-repeat;
+          background-position: -5px -5px;
+          display: block;
+          height: 73px;
+          width: 33px;
+          -webkit-animation: animate 1s linear infinite;
+                  animation: animate 1s linear infinite; }
 
 .main-btn {
-  margin-top: 2em;
-  width: 40%; }
+  margin-top: 3em;
+  width: 30%; }
+
+.about .title-lg {
+  margin-top: 1em;
+  text-align: center;
+  font-family: "Cuprum", sans-serif;
+  font-size: 5em;
+  font-weight: 700;
+  text-transform: uppercase; }
+
+.about .card {
+  min-height: 150px; }
+  .about .card .card-title {
+    font-family: "Cuprum", sans-serif;
+    font-size: 3em;
+    font-weight: 700;
+    line-height: 1em; }
+
+.about .center-card {
+  margin-left: 38% !important; }
+
+.services .title-lg {
+  -webkit-transform: translateY(160%);
+      -ms-transform: translateY(160%);
+          transform: translateY(160%);
+  text-align: center;
+  font-family: "Cuprum", sans-serif;
+  font-size: 5em;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-shadow: 1px 1px 40px #fff; }
+
+.services table {
+  margin: 5em 0; }
+  .services table .table-btn {
+    width: 250px; }
+
+.advantages {
+  padding: 3em 0; }
+  .advantages .title-lg {
+    text-align: center;
+    font-family: "Cuprum", sans-serif;
+    font-size: 5em;
+    font-weight: 700;
+    line-height: 1.2em;
+    text-transform: uppercase;
+    margin-bottom: .2em; }
+  .advantages .title-md {
+    font-family: "Cuprum", sans-serif;
+    font-size: 3em;
+    font-weight: 700;
+    line-height: 1em; }
+  .advantages-list li {
+    overflow: hidden;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    min-height: 100px;
+    margin-top: 3em; }
+  .advantages-list i {
+    display: block;
+    position: absolute;
+    height: 90px;
+    width: 90px;
+    -webkit-transform: translateX(-120%);
+        -ms-transform: translateX(-120%);
+            transform: translateX(-120%);
+    -webkit-border-radius: 50px;
+            border-radius: 50px;
+    border: 2px solid #03a9f4;
+    background-image: url(../img/spritesheet.png);
+    background-repeat: no-repeat; }
+
+.advantages-list_icon--1 {
+  background-position: -5px -5px; }
+
+@-webkit-keyframes animate {
+  0% {
+    -webkit-transform: translate(-50%, 15px);
+            transform: translate(-50%, 15px); }
+  35% {
+    -webkit-transform: translate(-50%, 30px);
+            transform: translate(-50%, 30px); }
+  70% {
+    -webkit-transform: translate(-50%, 20px);
+            transform: translate(-50%, 20px); }
+  100% {
+    -webkit-transform: translate(-50%, 15px);
+            transform: translate(-50%, 15px); } }
+
+@keyframes animate {
+  0% {
+    -webkit-transform: translate(-50%, 15px);
+            transform: translate(-50%, 15px); }
+  35% {
+    -webkit-transform: translate(-50%, 30px);
+            transform: translate(-50%, 30px); }
+  70% {
+    -webkit-transform: translate(-50%, 20px);
+            transform: translate(-50%, 20px); }
+  100% {
+    -webkit-transform: translate(-50%, 15px);
+            transform: translate(-50%, 15px); } }
