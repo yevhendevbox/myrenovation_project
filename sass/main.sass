@@ -112,7 +112,7 @@ $bold: 'Cuprum', sans-serif
     margin-top: 1em
     text-align: center
     font-family: $bold
-    font-size: 5em
+    font-size: 3.5em
     font-weight: 700
     text-transform: uppercase
 
@@ -128,10 +128,10 @@ $bold: 'Cuprum', sans-serif
     margin-left: 38% !important
 
 .services .title-lg
-    transform: translateY(160%)
+    transform: translateY(250%)
     text-align: center
     font-family: $bold
-    font-size: 5em
+    font-size: 3.5em
     font-weight: 700
     text-transform: uppercase
     text-shadow: 1px 1px 40px #fff
@@ -143,40 +143,72 @@ $bold: 'Cuprum', sans-serif
 
 .advantages
     padding: 3em 0
+    background-image: url(../img/advantages_bg.png)
+    background-repeat: no-repeat
+    background-position: 0 -400%
+    background-size: cover
     .title-lg
         text-align: center
         font-family: $bold
-        font-size: 5em
+        font-size: 3.5em
         font-weight: 700
         line-height: 1.2em
         text-transform: uppercase
-        margin-bottom: .2em
+        margin-bottom: 2em
     .title-md
         font-family: $bold
-        font-size: 3em
+        font-size: 2em
         font-weight: 700
         line-height: 1em
-    &-list li
-        overflow: hidden
-        box-sizing: border-box
-        min-height: 100px
-        margin-top: 3em
-    &-list i
+    &-content i
         display: block
-        position: absolute 
         height: 90px
         width: 90px
-        transform: translateX(-120%)
-        border-radius: 50px
         border: 2px solid $blue
-        background-image: url(../img/spritesheet.png)
+        border-radius: 50px
+        float: left
+        margin-right: 2em
         background-repeat: no-repeat
+        background-position: center
+        background-color: #fff 
+    &-content p
+        margin-bottom: 0
 
-.advantages-list
-    &_icon--1
-        background-position: -5px -5px
+.advantages-content
+    &_icon1
+        background-image: url(../img/adv_icon_1.png)
+    &_icon2
+        background-image: url(../img/adv_icon_5.png)
+    &_icon3
+        background-image: url(../img/adv_icon_2.png)
+    &_icon4
+        background-image: url(../img/adv_icon_6.png)
+    &_icon5
+        background-image: url(../img/adv_icon_3.png)
+    &_icon6
+        background-image: url(../img/adv_icon_7.png)
+    &_icon7
+        background-image: url(../img/adv_icon_4.png)
+    &_icon8
+        background-image: url(../img/adv_icon_8.png)
 
+.stages .title-sm
+    text-align: center
+    font-family: $bold
+    font-size: 2em
+    font-weight: 700
+    line-height: 1em
+    color: #fff
+    margin: 3em 0
 
+.stages .title-lg
+    text-align: center
+    font-family: $bold
+    font-size: 3.5em
+    font-weight: 700
+    line-height: 1.2em
+    text-transform: uppercase
+    margin: 2em 0
 
 @keyframes animate
     0% 

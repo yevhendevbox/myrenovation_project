@@ -159,7 +159,7 @@ html body {
   margin-top: 1em;
   text-align: center;
   font-family: "Cuprum", sans-serif;
-  font-size: 5em;
+  font-size: 3.5em;
   font-weight: 700;
   text-transform: uppercase; }
 
@@ -175,12 +175,12 @@ html body {
   margin-left: 38% !important; }
 
 .services .title-lg {
-  -webkit-transform: translateY(160%);
-      -ms-transform: translateY(160%);
-          transform: translateY(160%);
+  -webkit-transform: translateY(250%);
+      -ms-transform: translateY(250%);
+          transform: translateY(250%);
   text-align: center;
   font-family: "Cuprum", sans-serif;
-  font-size: 5em;
+  font-size: 3.5em;
   font-weight: 700;
   text-transform: uppercase;
   text-shadow: 1px 1px 40px #fff; }
@@ -191,42 +191,81 @@ html body {
     width: 250px; }
 
 .advantages {
-  padding: 3em 0; }
+  padding: 3em 0;
+  background-image: url(../img/advantages_bg.png);
+  background-repeat: no-repeat;
+  background-position: 0 -400%;
+  -webkit-background-size: cover;
+          background-size: cover; }
   .advantages .title-lg {
     text-align: center;
     font-family: "Cuprum", sans-serif;
-    font-size: 5em;
+    font-size: 3.5em;
     font-weight: 700;
     line-height: 1.2em;
     text-transform: uppercase;
-    margin-bottom: .2em; }
+    margin-bottom: 2em; }
   .advantages .title-md {
     font-family: "Cuprum", sans-serif;
-    font-size: 3em;
+    font-size: 2em;
     font-weight: 700;
     line-height: 1em; }
-  .advantages-list li {
-    overflow: hidden;
-    -webkit-box-sizing: border-box;
-            box-sizing: border-box;
-    min-height: 100px;
-    margin-top: 3em; }
-  .advantages-list i {
+  .advantages-content i {
     display: block;
-    position: absolute;
     height: 90px;
     width: 90px;
-    -webkit-transform: translateX(-120%);
-        -ms-transform: translateX(-120%);
-            transform: translateX(-120%);
+    border: 2px solid #03a9f4;
     -webkit-border-radius: 50px;
             border-radius: 50px;
-    border: 2px solid #03a9f4;
-    background-image: url(../img/spritesheet.png);
-    background-repeat: no-repeat; }
+    float: left;
+    margin-right: 2em;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #fff; }
+  .advantages-content p {
+    margin-bottom: 0; }
 
-.advantages-list_icon--1 {
-  background-position: -5px -5px; }
+.advantages-content_icon1 {
+  background-image: url(../img/adv_icon_1.png); }
+
+.advantages-content_icon2 {
+  background-image: url(../img/adv_icon_5.png); }
+
+.advantages-content_icon3 {
+  background-image: url(../img/adv_icon_2.png); }
+
+.advantages-content_icon4 {
+  background-image: url(../img/adv_icon_6.png); }
+
+.advantages-content_icon5 {
+  background-image: url(../img/adv_icon_3.png); }
+
+.advantages-content_icon6 {
+  background-image: url(../img/adv_icon_7.png); }
+
+.advantages-content_icon7 {
+  background-image: url(../img/adv_icon_4.png); }
+
+.advantages-content_icon8 {
+  background-image: url(../img/adv_icon_8.png); }
+
+.stages .title-sm {
+  text-align: center;
+  font-family: "Cuprum", sans-serif;
+  font-size: 2em;
+  font-weight: 700;
+  line-height: 1em;
+  color: #fff;
+  margin: 3em 0; }
+
+.stages .title-lg {
+  text-align: center;
+  font-family: "Cuprum", sans-serif;
+  font-size: 3.5em;
+  font-weight: 700;
+  line-height: 1.2em;
+  text-transform: uppercase;
+  margin: 2em 0; }
 
 @-webkit-keyframes animate {
   0% {
