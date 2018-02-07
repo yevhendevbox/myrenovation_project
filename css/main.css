@@ -249,6 +249,9 @@ html body {
 .advantages-content_icon8 {
   background-image: url(../img/adv_icon_8.png); }
 
+.stages {
+  padding-bottom: 1em; }
+
 .stages .title-sm {
   text-align: center;
   font-family: "Cuprum", sans-serif;
@@ -266,6 +269,42 @@ html body {
   line-height: 1.2em;
   text-transform: uppercase;
   margin: 2em 0; }
+
+.stages .steps i {
+  display: block;
+  height: 100px;
+  width: 100px;
+  margin: 0 auto;
+  margin-bottom: 2em;
+  background-position: center;
+  background-repeat: no-repeat;
+  -webkit-background-size: contain;
+          background-size: contain; }
+
+.stages .steps {
+  text-align: center;
+  margin-bottom: 5em; }
+
+.steps_icon1 {
+  background-image: url(../img/steps_icon1.png); }
+
+.steps_icon2 {
+  background-image: url(../img/steps_icon2.png); }
+
+.steps_icon3 {
+  background-image: url(../img/steps_icon3.png); }
+
+.steps_icon4 {
+  background-image: url(../img/steps_icon4.png); }
+
+.steps_icon5 {
+  background-image: url(../img/steps_icon5.png); }
+
+.steps_icon6 {
+  background-image: url(../img/steps_icon6.png); }
+
+.steps_icon7 {
+  background-image: url(../img/steps_icon7.png); }
 
 @-webkit-keyframes animate {
   0% {
