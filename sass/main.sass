@@ -175,7 +175,6 @@ $bold: 'Cuprum', sans-serif
         width: 90px
         border: 2px solid $blue
         border-radius: 50px
-        float: left
         margin-right: 2em
         background-repeat: no-repeat
         background-position: center
@@ -256,6 +255,7 @@ $bold: 'Cuprum', sans-serif
 // gallery section styles
 
 .gallery-section 
+    padding-bottom: 3em
     .title-lg
         text-align: center
         font-family: $bold
@@ -280,6 +280,49 @@ $bold: 'Cuprum', sans-serif
         justify-content: center
         align-items: center
 
+// feedbacks section styles
+.feedbacks
+    &-content-box
+        display: flex
+        height: 100%
+        width: 100%
+        flex-direction: column
+        justify-content: center
+        align-items: center
+        .title-lg
+            text-align: center
+            font-family: $bold
+            font-size: 3.5em
+            font-weight: 700
+            line-height: 1.2em
+            text-transform: uppercase
+    .card 
+        min-height: 270px
+    .parallax-container
+        margin-bottom: 3em
+
+// footer styles
+.page-footer
+    padding-top: 3em
+    .title-lg
+        text-align: center
+        font-family: $bold
+        font-size: 3.5em
+        font-weight: 700
+        line-height: 1.2em
+        text-transform: uppercase
+    .phone-num
+        display: block
+        color: #fff
+    .title-md
+        text-align: center
+        font-family: $bold
+        font-size: 2em
+        font-weight: 700
+        line-height: 1em
+    .footer-btn
+        width: 100%
+        margin-top: 2em
 // animation css
 
 @keyframes animate

@@ -4,6 +4,52 @@ html body {
   background-color: #f6f6f6;
   font-size: 16px; }
 
+@media (max-width: 480px) {
+  .showcase-content {
+    text-align: center; }
+    .showcase-content .title-lg {
+      font-size: 3em !important;
+      line-height: 1em; }
+    .showcase-content .title-md {
+      font-size: 1.5em !important;
+      line-height: 1em;
+      margin-top: 1em; }
+    .showcase-content .main-btn {
+      width: 100%; }
+    .showcase-content .scroll-down-container {
+      top: 65vh !important; }
+  .services .parallax-container {
+    height: 200px; }
+    .services .parallax-container .title-lg {
+      font-size: 2.5em;
+      -webkit-transform: translateY(120%);
+          -ms-transform: translateY(120%);
+              transform: translateY(120%); }
+  .advantages {
+    text-align: center; }
+    .advantages .title-lg {
+      font-size: 2.5em !important;
+      margin-bottom: 0 !important; }
+    .advantages-content i {
+      -webkit-transform: translateX(135%);
+          -ms-transform: translateX(135%);
+              transform: translateX(135%);
+      margin-top: 1em; }
+  .stages .title-sm {
+    margin: 1em 0 !important; }
+  .stages button {
+    width: 100%; }
+  .stages .title-lg {
+    font-size: 2.5em !important;
+    margin: 1em 0 !important; }
+  .gallery-section .parallax-container {
+    height: 250px; }
+    .gallery-section .parallax-container button {
+      width: 90%; }
+  .gallery-section .title-lg {
+    font-size: 2.5em !important;
+    margin: 1em 0 !important; } }
+
 .nav-wrap {
   position: fixed;
   width: 100vw;
@@ -217,7 +263,6 @@ html body {
     border: 2px solid #03a9f4;
     -webkit-border-radius: 50px;
             border-radius: 50px;
-    float: left;
     margin-right: 2em;
     background-repeat: no-repeat;
     background-position: center;
@@ -306,25 +351,46 @@ html body {
 .steps_icon7 {
   background-image: url(../img/steps_icon7.png); }
 
-.gallery-section .title-lg {
-  text-align: center;
-  font-family: "Cuprum", sans-serif;
-  font-size: 3.5em;
-  font-weight: 700;
-  line-height: 1.2em;
-  text-transform: uppercase;
-  margin: 2em 0; }
+.gallery-section {
+  padding-bottom: 3em; }
+  .gallery-section .title-lg {
+    text-align: center;
+    font-family: "Cuprum", sans-serif;
+    font-size: 3.5em;
+    font-weight: 700;
+    line-height: 1.2em;
+    text-transform: uppercase;
+    margin: 2em 0; }
+  .gallery-section .title-sm {
+    text-align: center;
+    font-family: "Cuprum", sans-serif;
+    font-size: 2em;
+    font-weight: 700;
+    line-height: 1em;
+    color: #fff;
+    margin-bottom: 1.5em; }
+  .gallery-section .gallery-content-box {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    height: 100%;
+    width: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center; }
 
-.gallery-section .title-sm {
-  text-align: center;
-  font-family: "Cuprum", sans-serif;
-  font-size: 2em;
-  font-weight: 700;
-  line-height: 1em;
-  color: #fff;
-  margin-bottom: 1.5em; }
-
-.gallery-section .gallery-content-box {
+.feedbacks-content-box {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -344,6 +410,41 @@ html body {
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center; }
+  .feedbacks-content-box .title-lg {
+    text-align: center;
+    font-family: "Cuprum", sans-serif;
+    font-size: 3.5em;
+    font-weight: 700;
+    line-height: 1.2em;
+    text-transform: uppercase; }
+
+.feedbacks .card {
+  min-height: 270px; }
+
+.feedbacks .parallax-container {
+  margin-bottom: 3em; }
+
+.page-footer {
+  padding-top: 3em; }
+  .page-footer .title-lg {
+    text-align: center;
+    font-family: "Cuprum", sans-serif;
+    font-size: 3.5em;
+    font-weight: 700;
+    line-height: 1.2em;
+    text-transform: uppercase; }
+  .page-footer .phone-num {
+    display: block;
+    color: #fff; }
+  .page-footer .title-md {
+    text-align: center;
+    font-family: "Cuprum", sans-serif;
+    font-size: 2em;
+    font-weight: 700;
+    line-height: 1em; }
+  .page-footer .footer-btn {
+    width: 100%;
+    margin-top: 2em; }
 
 @-webkit-keyframes animate {
   0% {
