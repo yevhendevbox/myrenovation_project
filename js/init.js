@@ -61,6 +61,72 @@ $(document).ready(function(){
       link.click(function(){
 				toggler.removeClass('toggler-active');
 				menu.removeClass('open-nav');
-			});
+      });
+  
+  // counter script
+    var show = true;
+      var countbox = ".benefits__inner";
+      $(window).on("scroll load resize", function () {
+          if (!show) return false; // Отменяем показ анимации, если она уже была выполнена
+          var w_top = $(window).scrollTop(); // Количество пикселей на которое была прокручена страница
+          var e_top = $(countbox).offset().top; // Расстояние от блока со счетчиками до верха всего документа
+          var w_height = $(window).height(); // Высота окна браузера
+          var d_height = $(document).height(); // Высота всего документа
+          var e_height = $(countbox).outerHeight(); // Полная высота блока со счетчиками
+          if (w_top + 650 >= e_top || w_height + w_top == d_height || e_height + e_top < w_height) {
+              $('.benefits__number').css('opacity', '1');
+              $('.benefits__number').spincrement({
+                  thousandSeparator: "",
+                  duration: 1200
+              });
+              
+              show = false;
+          }
+      });
+    
+    // scrollReveal init script
+      window.sr = ScrollReveal();
+      sr.reveal('.nav-wrap', { 
+        duration: 2000, 
+        origin: 'bottom',
+        mobile: false,
+        useDelay: 'once'
+      });
+      sr.reveal('.showcase-content', { 
+        duration: 2000, 
+        origin: 'left',
+        mobile: true,
+        distance: '100px'
+      });
+      sr.reveal('.about-title', { 
+        duration: 2000, 
+        origin: 'bottom',
+        mobile: true,
+        distance: '50px'
+      });
+      sr.reveal('.advantages-title', { 
+        duration: 2000, 
+        origin: 'bottom',
+        mobile: true,
+        distance: '50px'
+      });
+      sr.reveal('.stages-title', { 
+        duration: 2000, 
+        origin: 'bottom',
+        mobile: true,
+        distance: '50px'
+      });
+      sr.reveal('.gallery-title', { 
+        duration: 2000, 
+        origin: 'bottom',
+        mobile: true,
+        distance: '50px'
+      });
+      sr.reveal('.contacts-title', { 
+        duration: 2000, 
+        origin: 'bottom',
+        mobile: true,
+        distance: '50px'
+      });
 
   });

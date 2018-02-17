@@ -211,21 +211,21 @@ section:visited {
         font-weight: 700;
         line-height: 1em;
         text-shadow: 1px 1px 35px #fff; }
-      .showcase-wrap .showcase-content .scroll-down-container {
-        position: absolute;
-        -webkit-box-sizing: border-box;
-                box-sizing: border-box;
-        top: 70vh;
-        left: 50vw; }
-        .showcase-wrap .showcase-content .scroll-down-container_icon {
-          background-image: url(../img/spritesheet4.png);
-          background-repeat: no-repeat;
-          background-position: -5px -5px;
-          display: block;
-          height: 73px;
-          width: 33px;
-          -webkit-animation: animate 1s linear infinite;
-                  animation: animate 1s linear infinite; }
+  .showcase .scroll-down-container {
+    position: absolute;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    top: 70vh;
+    left: 50vw; }
+    .showcase .scroll-down-container_icon {
+      background-image: url(../img/spritesheet4.png);
+      background-repeat: no-repeat;
+      background-position: -5px -5px;
+      display: block;
+      height: 73px;
+      width: 33px;
+      -webkit-animation: animate 1s linear infinite;
+              animation: animate 1s linear infinite; }
 
 .main-btn {
   margin-top: 3em;
