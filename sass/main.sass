@@ -335,4 +335,48 @@ $bold: 'Cuprum', sans-serif
     100%
         transform: translate(-50%,15px)
 
+// toggler styles
 
+.nav-toggler
+    display: block
+    position: absolute
+    top: 10%
+    left: 85%
+    width: 40px
+    height: 40px
+    transition: all .3s
+    span, span::after, span::before
+        display: block
+        position: relative
+        width: 26px
+        height: 3px
+        top: 18px
+        left: 6px
+        background-color: $dark
+        content: ''
+
+.nav-toggler span::after
+    top: 5px
+    left: 0
+    transition: all .3s
+
+.nav-toggler span::before
+    top: -8px
+    left: 0
+    transition: all .3s
+
+.toggler-active span
+    height: 0
+
+.toggler-active span::after
+    top: -1px
+    transition: all .3s
+    transform: rotate(135deg)
+
+.toggler-active span::before
+    top: 2px
+    transition: all .3s
+    transform: rotate(-135deg)
+
+.open-nav
+    top: 50px

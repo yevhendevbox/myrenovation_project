@@ -4,7 +4,33 @@ html body {
   background-color: #f6f6f6;
   font-size: 16px; }
 
+section:active {
+  outline: none !important; }
+
+section:focus {
+  outline: none !important; }
+
+section:visited {
+  outline: none !important; }
+
 @media (max-width: 480px) {
+  .main-nav {
+    display: block !important;
+    position: absolute;
+    width: 100vw;
+    height: 50vh !important;
+    top: -500px;
+    left: 0;
+    text-align: center;
+    background-color: #f9f9f9;
+    -webkit-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14);
+            box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14);
+    -webkit-transition: all .3s;
+    -o-transition: all .3s;
+    transition: all .3s; }
+    .main-nav li {
+      padding: 13px 0;
+      text-align: center; }
   .showcase-content {
     text-align: center; }
     .showcase-content .title-lg {
@@ -48,7 +74,11 @@ html body {
       width: 90%; }
   .gallery-section .title-lg {
     font-size: 2.5em !important;
-    margin: 1em 0 !important; } }
+    margin: 1em 0 !important; }
+  .feedbacks .parallax-container {
+    height: 200px; }
+  footer .title-md {
+    margin-top: 1.5em; } }
 
 .nav-wrap {
   position: fixed;
@@ -473,3 +503,61 @@ html body {
   100% {
     -webkit-transform: translate(-50%, 15px);
             transform: translate(-50%, 15px); } }
+
+.nav-toggler {
+  display: block;
+  position: absolute;
+  top: 10%;
+  left: 85%;
+  width: 40px;
+  height: 40px;
+  -webkit-transition: all .3s;
+  -o-transition: all .3s;
+  transition: all .3s; }
+  .nav-toggler span, .nav-toggler span::after, .nav-toggler span::before {
+    display: block;
+    position: relative;
+    width: 26px;
+    height: 3px;
+    top: 18px;
+    left: 6px;
+    background-color: #212121;
+    content: ''; }
+
+.nav-toggler span::after {
+  top: 5px;
+  left: 0;
+  -webkit-transition: all .3s;
+  -o-transition: all .3s;
+  transition: all .3s; }
+
+.nav-toggler span::before {
+  top: -8px;
+  left: 0;
+  -webkit-transition: all .3s;
+  -o-transition: all .3s;
+  transition: all .3s; }
+
+.toggler-active span {
+  height: 0; }
+
+.toggler-active span::after {
+  top: -1px;
+  -webkit-transition: all .3s;
+  -o-transition: all .3s;
+  transition: all .3s;
+  -webkit-transform: rotate(135deg);
+      -ms-transform: rotate(135deg);
+          transform: rotate(135deg); }
+
+.toggler-active span::before {
+  top: 2px;
+  -webkit-transition: all .3s;
+  -o-transition: all .3s;
+  transition: all .3s;
+  -webkit-transform: rotate(-135deg);
+      -ms-transform: rotate(-135deg);
+          transform: rotate(-135deg); }
+
+.open-nav {
+  top: 50px; }
