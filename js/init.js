@@ -47,13 +47,18 @@ $(document).ready(function(){
     // navigation toggle
       var toggler = $('.nav-toggler');
 			var active = $('.toggler-active');
-			var menu = $('.main-nav');
+      var menu = $('.main-nav');
+      var link = $('.nav-link');
 
 			toggler.click(function(){
 				toggler.toggleClass('toggler-active');
 				menu.toggleClass('open-nav');
 			});
-			toggler_active.click(function(){
+			active.click(function(){
+				toggler.removeClass('toggler-active');
+				menu.removeClass('open-nav');
+      });
+      link.click(function(){
 				toggler.removeClass('toggler-active');
 				menu.removeClass('open-nav');
 			});
