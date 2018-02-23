@@ -3,7 +3,7 @@
         display: block !important
         position: absolute
         width: 100vw
-        height: 50vh !important
+        height: 350px !important
         top: -500px
         left: 0
         text-align: center
@@ -13,7 +13,6 @@
         li
             padding: 13px 0
             text-align: center
-
 
     .showcase-content
         text-align: center
@@ -25,7 +24,7 @@
             line-height: 1em
             margin-top: 1em
         .main-btn
-            width: 100%
+            width: 100% !important
         .scroll-down-container
             top: 65vh !important
 
@@ -68,3 +67,56 @@
 
     footer .title-md
         margin-top: 1.5em
+
+
+@media (max-width:991px)
+    .main-nav
+        display: block !important
+        position: absolute
+        width: 100vw
+        height: 350px !important
+        top: -500px
+        left: 0
+        text-align: center
+        background-color: $light
+        box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14)
+        transition: all .3s
+        li
+            padding: 13px 0
+            text-align: center
+    
+    .main-nav li a::after
+        content: none !important
+
+    .main-logo
+        margin-top: 1em !important
+
+    .nav-toggler
+        top: 15% !important
+    
+    .showcase-content
+        .title-lg
+            line-height: 1.2em
+        .main-btn
+            width: 50%
+
+    .services .parallax-container
+        margin-bottom: 3em 
+    
+    .services .collapsible span
+        display: block
+        font-size: 1.2em
+        font-weight: 500
+        text-align: center
+        margin-bottom: 1em
+
+    .stages 
+        .title-sm
+            margin: 1.8em 0 !important
+        button
+            width: 50%
+            margin-top: 1.5em
+    
+    footer
+        .title-md
+            margin-top: 1.5em

@@ -5,6 +5,7 @@ $(document).ready(function(){
     
     $('.materialboxed').materialbox();
 
+    $('.collapsible').collapsible();
 
     // Smooth scrolling 
     // Select all links with hashes

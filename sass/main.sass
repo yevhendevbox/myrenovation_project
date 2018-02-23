@@ -16,7 +16,9 @@ $bold: 'Cuprum', sans-serif
     box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14)
 
 .main-logo
+    position: fixed
     margin-top: .9em
+    z-index: 2
 
 .main-nav
     display: flex
@@ -110,7 +112,7 @@ $bold: 'Cuprum', sans-serif
 
 .main-btn 
     margin-top: 3em
-    width: 30%
+    width: 40%
 
 // about section styles
 
@@ -324,6 +326,14 @@ $bold: 'Cuprum', sans-serif
     .footer-btn
         width: 100%
         margin-top: 2em
+    .social-block
+        justify-content: start 
+        a 
+            font-size: 3em
+            margin-left: 1em
+            margin-top: .3em
+        a:first-child
+            margin-left: 0
 // animation css
 
 @keyframes animate
