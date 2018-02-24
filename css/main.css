@@ -124,6 +124,14 @@ section:visited {
   footer .title-md {
     margin-top: 1.5em; } }
 
+@media (max-width: 746px) and (orientation: landscape) {
+  .showcase-content .title-lg {
+    font-size: 3em !important; }
+  .showcase-content .title-md {
+    font-size: 1.5em !important; }
+  .scroll-down-container_icon {
+    display: none !important; } }
+
 .nav-wrap {
   position: fixed;
   width: 100vw;
@@ -297,9 +305,9 @@ section:visited {
   margin-left: 38% !important; }
 
 .services .title-lg {
-  -webkit-transform: translateY(250%);
-      -ms-transform: translateY(250%);
-          transform: translateY(250%);
+  -webkit-transform: translateY(300%);
+      -ms-transform: translateY(300%);
+          transform: translateY(300%);
   text-align: center;
   font-family: "Cuprum", sans-serif;
   font-size: 3.5em;
