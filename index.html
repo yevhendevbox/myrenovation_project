@@ -84,7 +84,7 @@
                 <div class="showcase-content">
                     <h1 class="title-lg">Комплексный ремонт</h1>
                     <h2 class="title-md">коттеджей, квартир, офисов <br class="hide-on-small-only"> магазинов и HoReCa</h2>
-                    <a href="#" class="waves-effect waves-light btn-large light-blue main-btn">Узнать актуальные цены</a>
+                    <a href="#modal1" class="waves-effect waves-light btn-large light-blue main-btn modal-trigger">Узнать актуальные цены</a>
                 </div>
                 <!-- /.showcase-content -->
                 <div class="scroll-down-container">
@@ -299,13 +299,13 @@
                 </tr>
                 <tr>
                     <td>
-                        <a href="#" class="waves-effect waves-light btn-large light-blue table-btn">Узнать подробнее</a>
+                        <button class="waves-effect waves-light btn-large light-blue table-btn modal-trigger" data-target="modal1">Узнать подробнее</button>
                     </td>
                     <td>
-                        <a href="#" class="waves-effect waves-light btn-large light-blue table-btn">Узнать подробнее</a>
+                        <button class="waves-effect waves-light btn-large light-blue table-btn modal-trigger" data-target="modal1">Узнать подробнее</button>
                     </td>
                     <td>
-                        <a href="#" class="waves-effect waves-light btn-large light-blue table-btn">Узнать подробнее</a>
+                        <button class="waves-effect waves-light btn-large light-blue table-btn modal-trigger" data-target="modal1">Узнать подробнее</button>
                     </td>
                 </tr>
                 </tbody>
@@ -568,7 +568,7 @@
                     <h4 class="title-sm">
                         Стильный и современный ремонт в Вашем доме от 2 000 грн./м2
                     </h4>
-                    <button class="waves-effect waves-light btn-large light-blue gallery-btn" type="submit" name="action">
+                    <button class="waves-effect waves-light btn-large light-blue gallery-btn modal-trigger" data-target="modal1" name="action">
                         Расчитать стоимость
                     </button>
                 </div>
@@ -829,6 +829,38 @@
         </div>
       </footer>
       <!-- /.page-footer -->
+
+      
+       <!-- Modal Structure -->
+        <div id="modal1" class="modal">
+            <div class="modal-content">
+            <h4>Получите бесплатную консультацию</h4>
+            <div class="row">
+                    <form class="col s12">
+                        <div class="row">
+                            <div class="input-field col s12 m12 l12">
+                                <i class="material-icons prefix">account_circle</i>
+                                <input id="icon_prefix" type="text" class="validate">
+                                <label for="icon_prefix">Имя</label>
+                            </div>
+                            <div class="input-field col s12 m12 l12">
+                                <i class="material-icons prefix">phone</i>
+                                <input id="icon_telephone" type="tel" class="validate">
+                                <label for="icon_telephone">Номер телефона</label>
+                            </div>
+                            <div class="col s12 m12 l12">
+                                <button class="waves-effect waves-light btn-large light-blue" type="submit" name="action">
+                                Оставить заявку
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="modal-footer">
+            <a href="#!" class="modal-action modal-close waves-effect waves-teal btn-flat">Закрыть</a>
+            </div>
+        </div>
 
       <!--[if lt IE 9]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
     <script src="js/jquery-3.2.1.js"></script>

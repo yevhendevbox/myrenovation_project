@@ -7,6 +7,8 @@ $(document).ready(function(){
 
     $('.collapsible').collapsible();
 
+    $('.modal').modal();
+
     // Smooth scrolling 
     // Select all links with hashes
     $('a[href*="#"]')
