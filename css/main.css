@@ -40,19 +40,20 @@ section:visited {
     .main-nav li {
       padding: 13px 0;
       text-align: center; }
-  .showcase-content {
+  .showcase .scroll-down-container {
+    top: 65vh !important; }
+  .showcase .showcase-content {
     text-align: center; }
-    .showcase-content .title-lg {
+    .showcase .showcase-content .title-lg {
       font-size: 3em !important;
-      line-height: 1em; }
-    .showcase-content .title-md {
+      line-height: 1em;
+      margin: 0; }
+    .showcase .showcase-content .title-md {
       font-size: 1.5em !important;
       line-height: 1em;
-      margin-top: 1em; }
-    .showcase-content .main-btn {
+      margin: 0; }
+    .showcase .showcase-content .main-btn {
       width: 100% !important; }
-    .showcase-content .scroll-down-container {
-      top: 65vh !important; }
   .services .parallax-container {
     height: 200px; }
     .services .parallax-container .title-lg {
@@ -89,7 +90,11 @@ section:visited {
   footer .title-md {
     margin-top: 1.5em; }
   .modal {
-    width: 80% !important; } }
+    width: 90% !important; }
+    .modal h4 {
+      margin-top: .3em !important; }
+    .modal .modal-content {
+      padding: 15px; } }
 
 @media (max-width: 991px) {
   .main-nav {
@@ -128,7 +133,7 @@ section:visited {
     text-align: center;
     margin-bottom: 1em; }
   .stages .title-sm {
-    margin: 1.8em 0 !important; }
+    margin: 1.8em 0; }
   .stages button {
     width: 50%;
     margin-top: 1.5em; }
@@ -137,9 +142,11 @@ section:visited {
 
 @media (max-width: 746px) and (orientation: landscape) {
   .showcase-content .title-lg {
-    font-size: 3em !important; }
+    font-size: 3em !important;
+    margin: 0; }
   .showcase-content .title-md {
-    font-size: 1.5em !important; }
+    font-size: 1.5em !important;
+    margin: 0; }
   .scroll-down-container_icon {
     display: none !important; } }
 
@@ -201,6 +208,8 @@ section:visited {
         opacity: .8; }
         .main-nav li a:hover::after {
           width: 100%; }
+  .main-nav .active {
+    color: #03a9f4; }
 
 .social-block {
   display: -webkit-box;
